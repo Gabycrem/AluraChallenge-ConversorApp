@@ -29,10 +29,15 @@ Aplicación de consola en Java que convierte monedas utilizando tasas de cambio 
 ## Cómo ejecutar
 
 1. Clonar el repositorio o descargar el código fuente.
-2. Configurar tu API key en la clase `ExchangeRateService`.
-3. Compilar y ejecutar la clase `Main`.
-4. Seguir las instrucciones que aparecen en consola para seleccionar opciones y convertir montos.
-5. Presionar ENTER cuando se indique para continuar o salir.
+2. Crear un archivo llamado `config.properties` en el directorio raíz del proyecto (al mismo nivel que `src`).
+3.  Dentro del archivo `config.properties`, agregar la siguiente línea con tu API key:
+```
+API_KEY=tu_clave_aquí
+```
+4.  Asegurarte de **no subir este archivo al repositorio**, ya que contiene información sensible (el archivo ya está ignorado mediante `.gitignore`).
+5. Compilar y ejecutar la clase `Main`.
+6. Seguir las instrucciones que aparecen en consola para seleccionar opciones y convertir montos.
+7. Presionar ENTER cuando se indique para continuar o salir.
 
 ## Ejemplo de uso
 
@@ -56,6 +61,8 @@ Presione ENTER para continuar...
 ```
 
 ## Autor
-- Nombre: Gabycrem
 
-- Proyecto realizado para el Challenge One Java Back-End de Alura Latam.
+Desarrollado por **Gabycrem** como parte del **Challenge ONE - Java Back-End** del programa de formación profesional [Oracle Next Education](https://www.oracle.com/lad/education/oracle-next-education/) en colaboración con [Alura Latam](https://www.aluracursos.com/).
+
+📍 Tierra del Fuego, Argentina  
+🔗 [LinkedIn](https://www.linkedin.com/in/macrenazarena)

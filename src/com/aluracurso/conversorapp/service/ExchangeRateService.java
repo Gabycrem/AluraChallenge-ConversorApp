@@ -1,6 +1,7 @@
 package com.aluracurso.conversorapp.service;
 
 import com.aluracurso.conversorapp.model.Currency;
+import com.aluracurso.conversorapp.util.ApiKeyReader;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -11,8 +12,9 @@ import java.net.http.HttpResponse;
 
 public class ExchangeRateService {
 
+    String apiKey = ApiKeyReader.getApiKey();
     public Currency searchCurrency(String currencyExchange){
-        URI apiUrl = URI.create("https://v6.exchangerate-api.com/v6/6976961651fc6a89bbfdaa68/latest/" + currencyExchange);
+        URI apiUrl = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/latest/" + currencyExchange);
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(apiUrl)
