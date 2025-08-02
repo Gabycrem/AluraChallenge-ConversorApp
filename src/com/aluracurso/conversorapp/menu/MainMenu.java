@@ -8,14 +8,14 @@ public class MainMenu {
         System.out.println(" - - - - - - - - - - - - - - - - - - - - - -");
         System.out.println("Sea bienvenido al Conversor de Moneda \n");
         System.out.println("OPCIONES: \n");
-        System.out.println("1 - Dolar =>> Peso Agentino.");
-        System.out.println("2 - Peso Agentino =>> Dolar.");
-        System.out.println("3 - Dolar =>> Real Brasileño.");
-        System.out.println("4 - Real Brasileño =>> Dolar.");
-        System.out.println("5 - Dolar =>> Peso Colombiano.");
-        System.out.println("6 - Peso Colombiano =>> Dolar.");
+        System.out.println("1 - Dólar =>> Peso Agentino.");
+        System.out.println("2 - Peso Agentino =>> Dólar.");
+        System.out.println("3 - Dólar =>> Real Brasileño.");
+        System.out.println("4 - Real Brasileño =>> Dólar.");
+        System.out.println("5 - Dólar =>> Peso Colombiano.");
+        System.out.println("6 - Peso Colombiano =>> Dólar.");
         System.out.println("7 - SALIR. \n");
-        System.out.print("Su opción: ");
+        System.out.print("Seleccione una opción: ");
         return teclado.nextInt();
     }
 

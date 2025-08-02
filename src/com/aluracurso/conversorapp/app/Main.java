@@ -25,10 +25,10 @@ public class Main {
             if (option != 7) {
                 String baseCode = menu.getBaseCode(option);
                 String targetCode = menu.getTargetCode(option);
-                System.out.println("Ingrese el valor a convertir: ");
+                System.out.print("Ingrese el monto a convertir: ");
                 double valueConvert = Double.valueOf(teclado.nextLine());
                 var convert = ConvertCurrencyService.convertCurrency(baseCode, targetCode, valueConvert);
-                System.out.println(valueConvert + "[" + baseCode + "] ==> " + convert + "[" + targetCode + "]");
+                System.out.println(valueConvert + " " + baseCode + " equivalen a " + convert + " " + targetCode);
                 waitForUserInput();
             } else {
                 System.out.println(" - - - - - - - - - - - - - - - - - - - - - -");
